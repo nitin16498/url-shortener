@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Short URL Created{% endblock %} {%
+block content %}
+<h1 class="text-center">Short URL Created</h1>
+<p class="text-center mt-4">Your short URL is:</p>
+<p class="text-center">
+  <a href="{{ short_url }}">{{ short_url }}</a>
+</p>
+<div class="text-center mt-4">
+  <a href="{{ url_for('home') }}" class="btn btn-secondary"
+    >Shorten another URL</a
+  >
+</div>
+{% endblock %}

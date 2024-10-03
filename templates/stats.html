@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block title %}Statistics - URL Shortener{% endblock
+%} {% block content %}
+<h1 class="text-center">Statistics for {{ short_code }}</h1>
+<p class="mt-4">Long URL: <a href="{{ long_url }}">{{ long_url }}</a></p>
+<p>Total Clicks: {{ clicks }}</p>
+<div class="mt-4">
+  <a href="{{ url_for('home') }}" class="btn btn-secondary">Go back to home</a>
+</div>
+{% endblock %}
